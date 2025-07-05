@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GearUp Auto</title>
+
+    <!--Bootstrap CSS Link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        
+    <!--Bootstrap JS Links-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--Font Awesome Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS link-->
+    <link rel="stylesheet" href="css/style_3.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>GearUp <span>Auto</span> Pvt. Ltd.</h1>
+            <h3>Check EMI Offers</h3>
+            <p class="lead">Calculate your monthly EMI for your dream car!</p>
+        </div>
+    </header>
+
+    <!-- EMI Calculator Form -->
+    <section class="py-5 emi">
+        <div class="container">
+            <div class="calculator-section">
+                <h3>EMI Calculator</h3>
+                <form id="emiForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="carPrice" class="form-label">Car Price (₹)</label>
+                            <input type="number" class="form-control" id="carPrice" placeholder="e.g., 500000"
+                                min="100000" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="downPayment" class="form-label">Down Payment (₹)</label>
+                            <input type="number" class="form-control" id="downPayment" placeholder="e.g., 100000"
+                                min="0" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="loanTenure" class="form-label">Loan Tenure (Years)</label>
+                            <select class="form-select" id="loanTenure" required>
+                                <option value="" disabled selected>Select Tenure</option>
+                                <option value="1">1 Year</option>
+                                <option value="2">2 Years</option>
+                                <option value="3">3 Years</option>
+                                <option value="4">4 Years</option>
+                                <option value="5">5 Years</option>
+                                <option value="6">6 Years</option>
+                                <option value="7">7 Years</option>
+                                <option value="5">8 Years</option>
+                                <option value="6">9 Years</option>
+                                <option value="7">10 Years</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="interestRate" class="form-label">Interest Rate (% p.a.)</label>
+                            <input type="number" class="form-control" id="interestRate" placeholder="e.g., 8.5"
+                                step="0.1" min="1" max="20" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-danger w-100 mt-4">Calculate EMI</button>
+                </form>
+                <!-- EMI Result -->
+                <div class="result-section" id="emiResult">
+                    <h5>EMI Details</h5>
+                    <p><strong>Monthly EMI:</strong> ₹<span id="monthlyEmi">0</span></p>
+                    <p><strong>Loan Amount:</strong> ₹<span id="loanAmount">0</span></p>
+                    <p><strong>Total Interest Payable:</strong> ₹<span id="totalInterest">0</span></p>
+                    <p><strong>Total Payment:</strong> ₹<span id="totalPayment">0</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Support Section -->
+    <section class="py-5 contact">
+        <div class="container text-center">
+            <h2>Need Help with Financing?</h2>
+            <p>Contact our team for personalized loan options and assistance.</p>
+            <p><strong>Phone:</strong> +91 8375056468 | <strong>Email:</strong> support@gearup.com |
+                <strong>WhatsApp:</strong> +91 8375056468
+            </p>
+            <a href="faq.html" class="btn btn-outline-danger" target="_blank">View FAQs</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p>2025 | GearUp Auto Pvt. Ltd. | Designed and Coded by Mohd Munaf Khan</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--scroll top-->
+    <a href="#" class="top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script_2.js"></script>
+</body>
+
+</html>
