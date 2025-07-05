@@ -15,7 +15,7 @@ GearUp Auto is a responsive web platform for buying and selling second-hand cars
 - **Bootstrap**: Responsive design for cross-device compatibility.
 
 ## Installation
-1. Clone the repository: `git clone https://github.com/your-username/gearup-auto.git`
+1. Clone the repository: `git clone https://github.com/MohdMunafKhan/GearUp-Auto-Car-Website.git`
 2. Open `index.html` in a browser to view the website.
 
 ## Usage
